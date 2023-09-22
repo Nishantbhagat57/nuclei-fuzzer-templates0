@@ -21,14 +21,7 @@ http:
       - "{{BaseURL}}"
     
     payloads:
-      payload: payloads/linux-lfi-payloads.txt
-    
-    fuzzing:
-      - part: query
-        type: replace
-        mode: single
-        fuzz:
-          - "{{payload}}"
+      paths: payloads/linux-lfi-payloads.txt
 
     stop-at-first-match: true
     matchers-condition: and
