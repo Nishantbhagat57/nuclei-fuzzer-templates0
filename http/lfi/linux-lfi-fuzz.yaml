@@ -12,8 +12,6 @@ info:
   reference:
     - https://github.com/danielmiessler/SecLists/tree/master/Fuzzing/LFI
   tags: lfi,dast,linux
-  metadata:
-    max-request: 32
 
 http:
   - method: GET
