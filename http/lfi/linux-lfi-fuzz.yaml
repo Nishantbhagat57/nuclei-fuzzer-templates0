@@ -2,7 +2,7 @@ id: linux-lfi-fuzz
 
 info:
   name: Local File Inclusion - Linux
-  author: DhiyaneshDK
+  author: Nishant57
   severity: high
   description: Linux is subject to local file Inclusion on searches for /etc/passwd on passed URLs.
   classification:
@@ -24,7 +24,7 @@ http:
     fuzzing:
       - part: query
         type: replace
-        mode: single
+        mode: multiple
         fuzz:
           - "{{payload}}"
 
