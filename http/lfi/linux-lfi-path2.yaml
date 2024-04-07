@@ -1,0 +1,20 @@
+id: path-based-lfi-shadow
+info:
+  name: Path Based LFI Detection for /etc/shadow
+  author: pdteam
+  severity: high
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/{{path}}"
+    payloads:
+      path: payloads/linux-lfi-shadow-payloads.txt
+    stop-at-first-match: true
+    matchers-condition: and
+    matchers:
+      - type: regex
+        name: linux-shadow
+        part: body
+        regex:
+          - 'root:.*?:[0-9]*:[0-9]*:[0-9]*:[0-9]*:'
