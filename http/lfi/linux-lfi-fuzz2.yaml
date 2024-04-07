@@ -1,0 +1,38 @@
+id: linux-lfi-fuzz-shadow
+
+info:
+  name: Local File Inclusion - Linux Shadow
+  author: Nishant57
+  severity: high
+  description: Linux is subject to local file Inclusion on searches for /etc/shadow on passed URLs.
+  classification:
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+    cvss-score: 9.8
+    cwe-id: CWE-89
+  reference:
+    - https://github.com/danielmiessler/SecLists/tree/master/Fuzzing/LFI
+  tags: lfi,dast,linux
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    
+    payloads:
+      payload: payloads/linux-lfi-shadow-payloads.txt
+    
+    fuzzing:
+      - part: query
+        type: replace
+        mode: single
+        fuzz:
+          - "{{payload}}"
+
+    stop-at-first-match: true
+    matchers-condition: and
+    matchers:
+      - type: regex
+        name: linux-shadow
+        part: body
+        regex:
+          - 'root:.*?:[0-9]*:[0-9]*:[0-9]*:[0-9]*:'
